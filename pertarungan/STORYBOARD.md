@@ -1,49 +1,49 @@
-# Storyboard — "Rival di Atap Kota"
+# Storyboard v2 — "Rival di Atap Kota"
 
 - **Durasi:** 30 detik (900 frame @ 30 fps), 1920×1080, tanpa audio
-- **Alat:** Remotion (React), belum dirender
+- **Alat:** Remotion (`anime/`), belum dirender sebagai video
 - **Alur:** dua rival bertemu di atap kota saat senja, bertarung, dan berakhir imbang
-- **Sumber visual:** `source/petarung-merah.png`, `source/pangeran-biru.png`
-  (dipotong per panel; logo "Prince of Persia" selalu dihindari/dipotong)
-- **Lembar visual:** `storyboard/storyboard.png` (dibuat oleh `storyboard/build_sheet.py`)
-
-## Bahasa visual yang ditiru (gaya, bukan aset)
-
-| Ciri ala Kimetsu no Yaiba          | Penerapan di video ini                                        |
-| ---------------------------------- | ------------------------------------------------------------- |
-| Efek jurus bergaya lukisan ukiyo-e | Jejak tebasan pangeran: ombak biru bergaris tinta              |
-| Jejak api pada tebasan             | Jejak tebasan petarung merah: api merah-oranye                 |
-| Close-up mata sebelum bertarung    | Shot 3–4, dari panel mata bercadar                            |
-| Nama jurus sebagai teks di layar   | Shot 10, teks vertikal (nama sementara, menunggu persetujuan) |
-| Impact frame & kamera bergetar     | Shot 8 dan 12                                                 |
+- **Lembar visual:** `storyboard/storyboard-v2.jpg`. Setiap panel adalah frame asli dari komposisi
+  `Pertarungan`, bukan sketsa.
+- **Sumber karakter:** `source/*-anime.jpg` (versi gaya anime dari pengguna), latarnya dihapus
+  menjadi `cutouts/*.png`
 
 ## Daftar shot
 
-| #  | Waktu         | Frame   | Isi                                  | Gerak kamera / efek                                              |
-| -- | ------------- | ------- | ------------------------------------ | ---------------------------------------------------------------- |
-| 1  | 0:00.0–0:02.5 | 0–74    | Petarung merah dari belakang, senja  | Push-in pelan, partikel debu, kain berkibar (deformasi ringan)   |
-| 2  | 0:02.5–0:04.5 | 75–134  | Pangeran biru di atap seberang       | Gambar dicerminkan agar arah layar berlawanan, push-in           |
-| 3  | 0:04.5–0:06.0 | 135–179 | ECU mata merah bercadar              | Zoom pelan, kilat cahaya di mata pada frame terakhir             |
-| 4  | 0:06.0–0:07.5 | 180–224 | ECU mata biru bercadar               | Cermin shot 3                                                     |
-| 5  | 0:07.5–0:09.5 | 225–284 | Split diagonal dua wajah             | Kedua panel di-pan berlawanan, garis emas berpendar               |
-| 6  | 0:09.5–0:11.0 | 285–329 | Genggaman gagang + kilau bilah       | Dua cut cepat, kilau putih menyapu bilah                          |
-| 7  | 0:11.0–0:12.5 | 330–374 | Keduanya melesat dari dua sisi       | Speed lines, gambar meluncur ke tengah, jejak merah vs biru       |
-| 8  | 0:12.5–0:13.5 | 375–404 | BENTURAN pertama                     | 3 frame hitam-putih, flash, percikan, layar bergetar              |
-| 9  | 0:13.5–0:18.0 | 405–539 | Adu tebasan, 6 cut @ ±22 frame       | Zoom ke bagian berbeda, jejak api/ombak, percikan tiap benturan   |
-| 10 | 0:18.0–0:20.5 | 540–614 | Berpisah, ambil kuda-kuda            | Latar gelap, partikel aura merah/biru, nama jurus vertikal        |
-| 11 | 0:20.5–0:24.0 | 615–719 | Jurus pamungkas bertemu di tengah    | Pusaran api vs ombak dari dua sisi, slow-mo menjelang benturan    |
-| 12 | 0:24.0–0:25.0 | 720–749 | White-out                            | Layar putih, cincin gelombang kejut, getar                        |
-| 13 | 0:25.0–0:28.0 | 750–839 | Debu reda, dua wajah                 | Kabut debu memudar, kain berkibar pelan                           |
-| 14 | 0:28.0–0:30.0 | 840–899 | Kartu akhir "IMBANG — bersambung"    | Kedua karakter digelapkan, judul emas muncul                      |
+| #   | Waktu       | Frame   | Isi                                                     |
+| --- | ----------- | ------- | ------------------------------------------------------- |
+| 01  | 0:00–0:02.5 | 0–74    | Senja, kamera turun; dua rival di atap berseberangan     |
+| 02  | 0:02.5–0:04 | 75–119  | Petarung merah, rim light hangat, push-in               |
+| 03  | 0:04–0:05.5 | 120–164 | Pangeran biru, rim light dingin, push-in                |
+| 04  | 0:05.5–0:07 | 165–209 | Close-up mata merah, cut ke close-up mata biru          |
+| 05  | 0:07–0:08.5 | 210–254 | Kuda-kuda: kota menggelap, aura air & api menyala       |
+| 06  | 0:08.5–0:10 | 255–299 | Melesat ke tengah: afterimage & garis kecepatan         |
+| 07  | 0:10–0:11   | 300–329 | Benturan: 3 impact frame, lalu percikan & layar bergetar |
+| 08  | 0:11–0:15   | 330–449 | Adu tebasan 4 ketukan: ombak biru ↔ api, kamera berayun  |
+| 09  | 0:15–0:17   | 450–509 | Terpental mundur, debu di kaki                          |
+| 10  | 0:17–0:19   | 510–569 | Nama jurus vertikal: pangeran, lalu petarung merah       |
+| 11  | 0:19–0:23   | 570–689 | Jurus pamungkas: ombak raksasa vs badai api             |
+| 12  | 0:23–0:24   | 690–719 | White-out + gelombang kejut                             |
+| 13  | 0:24–0:27   | 720–809 | Uap menipis, keduanya masih berdiri                     |
+| 14  | 0:27–0:30   | 810–899 | Kartu akhir "IMBANG — bersambung"                       |
 
-## Batasan yang perlu diketahui
+## Cara melihat dan memperbarui
 
-1. **Karakter tidak bergerak seperti anime asli.** Ilustrasi diam hanya
-   digeser, di-zoom, dipotong, dan diberi efek. Ekspresi wajah tidak bisa
-   berubah (shot 13 memakai ekspresi yang sudah ada di gambar).
-2. **Panel kecil akan buram jika dibesarkan.** Panel wajah, mata, dan punggung
-   berukuran sekitar 220–330 px lebar. Di layar 1920 px, panel-panel ini
-   dibesarkan sekitar 6–8× dan akan terlihat lembut. Penanganan: dibingkai
-   lebih kecil, diberi grain/garis tinta, atau di-upscale dengan AI terlebih dulu.
-3. **Logo di gambar sumber.** Bagian gambar yang memuat logo tidak dipakai,
-   sehingga pilihan framing pada tangan petarung merah terbatas.
+```bash
+cd pertarungan/anime
+npm i
+npx remotion studio                      # pratinjau interaktif
+# Render ulang frame storyboard (butuh Chrome; di cloud pakai Chrome milik HyperFrames):
+REMOTION_BROWSER=/path/ke/chrome-headless-shell node scripts/storyboard-stills.mjs 50 105 ...
+python3 scripts/storyboard-sheet.py ../storyboard/storyboard-v2.jpg
+```
+
+## Batasan
+
+1. **Karakter tidak benar-benar beranimasi.** Gerakannya hanya geser, putar, skala, afterimage,
+   dan efek. Tangan dan kaki tidak bergerak terpisah, dan ekspresi tidak berubah.
+2. **Close-up wajah buram.** Wajah di gambar sumber hanya selebar ±150–200 px, sementara di
+   shot 04 dibesarkan sekitar 3–4×.
+3. **Karakter wanita terpotong di paha** pada gambar sumbernya. Bagian bawahnya selalu ditutup
+   atap, uap, atau keluar dari bingkai.
+4. **Latar kota masih sederhana** (siluet berlapis), belum selevel lukisan latar anime TV.
