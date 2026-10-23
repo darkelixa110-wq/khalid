@@ -1,0 +1,26 @@
+{
+  "name": "khalid",
+  "version": "1.0.0",
+  "description": "Proyek video HyperFrames (HTML ke MP4)",
+  "scripts": {
+    "setup": "bash scripts/setup.sh",
+    "doctor": "hyperframes doctor",
+    "check": "cd demo && hyperframes check",
+    "snapshot": "cd demo && hyperframes snapshot",
+    "render": "cd demo && hyperframes render",
+    "preview": "cd demo && hyperframes preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darkelixa110-wq/khalid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/darkelixa110-wq/khalid/issues"
+  },
+  "homepage": "https://github.com/darkelixa110-wq/khalid#readme",
+  "devDependencies": {
+    "gsap": "3.14.2",
+    "hyperframes": "0.8.186"
+  },
+  "private": true
+}
